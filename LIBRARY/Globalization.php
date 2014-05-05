@@ -123,7 +123,11 @@ class Globalization extends ApplicationComponent {
 
     return null;
   }
-   
+  /*
+   * Get the list of resources for a given page
+   * 
+   * Return array
+   */ 
   public function getLocalResourceArray($page_name) {
       return $this->res_local[$this->app->locale][$page_name];
   }
